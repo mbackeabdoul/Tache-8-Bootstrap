@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image:url(./images/header-bg.jpeg);
+    height: 500px;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+.navbar-brand{
+    font-weight: bolder;
+    /* color: #ffff; */
+    color: #ffc800;
+    font-weight: 700;
+    letter-spacing: 0,1em;
+    text-transform: uppercase;
+    font-style:italic;
+}
+
+.title{
+    padding: 8%;
+}
+.title h1{
+    font-weight: bolder;
+    font-size: 45px;
+}
+/* services */
+.icons-service{
+    background-color: #ffc800;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: #ffff;
+    font-size: 50px;
+    padding: 10px;
+    font-weight: 500;
+    
+
+}
+.service p{
+    color: #6c757d;
+}
+
+.caru img :hover{
+    cursor: pointer;
+    background-color: #ffc800;
+    /* transition: 0.5s ease; */
+}
+
+.caru img :active{
+    cursor: pointer;
+    background-color: #ffc800;
+    /* transition: 0.5s ease; */
+}
+/* fin */
+
+/* portfolio */
+/* .offcanvas .card img :active{
+    opacity: 0.9;
+    background-color: #ffc800;
+    
+    
+} */
+
+/* Round */
+.rounde img{
+    border-radius: 50%;
+    width: 200px;
+    /* height: 200px; */
+    border: 8px solid #b7babd;
+}
+
+.icons-rounde{
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #ffff;
+    padding: 4px;
+    font-size: 20px;
+}
+
+.icons-rounde p{
+    color: #6c757d;
+}
+
+/* microsoft */
+
+.image-svg img{
+    width: 220px;
+    height:200px;
+}
+
+
+/* Contacts */
+
+ .Contacts-us{
+    background-image: url(./images/degrade-ombre-legere-motif-transparent-carreaux-transparent_53562-19341.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    
+} 
+.form-- .form-control{
+    padding:65px;
+}
+/* .form-- ::placeholder{
+    text-align: start;
+    margin-top: 30px;
+} */
+
+.icons-footer{
+    background-color: black;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    color: #ffff;
+    padding: 1px;
+    text-align: center;
+    /* font-size: 12px; */
+}
+
+/* timline */
+
+/* .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4{
+    text-transform:none;
+  }
+  @media screen and (min-width:1200px){
+    .timeline li{
+        min-height: 170px;
+    }
+    .timeline li.timeline-inverted .timeline-panel{
+        padding: 0 100px 20px 20px;
+    }
+  }
+
+  @media (min-width:992px) {
+    .timeline li.timeline-panel{
+        padding: 0 20px 20px;
+    }
+    .timeline li.timeline-inverted .timeline-panel{
+        padding: 0  20px 20px;
+    }
+    .timeline li{
+        min-height:150px;
+    }
+    .timeline li.timeline-image{
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+  }
+ 
+  @media (min-width:768px) {
+    .timeline::before{
+        left: 50%;
+    }
+    .timeline li.timeline-inverted .timeline-panel{
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left;
+    }
+    .timeline li .timeline-panel{
+        float: left;
+        width: 41%;
+        padding: 0 20px 20px 30px;
+        text-align: right;
+    }
+    .timeline li{
+        min-height: 100px;
+        margin-bottom: 100px;
+    }
+    .timeline li .timeline-image{
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+     }
+} */
