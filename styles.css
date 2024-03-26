@@ -44,17 +44,17 @@ header{
     color: #6c757d;
 }
 
-.caru img :hover{
+ /* .caru img ::before{
     cursor: pointer;
     background-color: #ffc800;
-    /* transition: 0.5s ease; */
-}
+    transition: 0.5s ease;
+}  */
 
-.caru img :active{
+/* .caru img ::after{
     cursor: pointer;
     background-color: #ffc800;
-    /* transition: 0.5s ease; */
-}
+    transition: 0.5s ease;
+}  */
 /* fin */
 
 /* portfolio */
@@ -123,11 +123,97 @@ header{
     /* font-size: 12px; */
 }
 
-/* timline */
+/* timline  */
 
-/* .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4{
-    text-transform:none;
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
   }
+  .timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    content: "";
+    background-color: #e9ecef;
+  }
+  .timeline > li {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 50px;
+  }
+  .timeline > li:after, .timeline > li:before {
+    display: table;
+    content: " ";
+  }
+  .timeline > li:after {
+    clear: both;
+  }
+  .timeline > li .timeline-panel {
+    position: relative;
+    float: right;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+  }
+  .timeline > li .timeline-inverted .timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+  }
+  .timeline > li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+  }
+  .timeline > li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+  }
+  .timeline > li .timeline-image {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 7px solid #e9ecef;
+    border-radius: 100%;
+    background-color: #ffc800;
+  }
+  .mg{
+    max-width: 100%;
+    height: auto;
+}
+  .timeline > li .timeline-image h4{
+    font-size: 10px;
+    line-height: 14px;
+    margin-top: 12px;
+  }
+  .timeline .timeline-body ul,
+  .timeline .timeline-body p {
+    margin-bottom: 0;
+  } 
+  .text-muted{
+    --bs-text-opacity:1;
+    color: gray !important;
+  }
+  p{
+    line-height: 1.75;
+  }
+  .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4{
+    text-transform: none;
+  }
+
+  
   @media screen and (min-width:1200px){
     .timeline li{
         min-height: 170px;
@@ -163,8 +249,8 @@ header{
         padding: 0 30px 20px 20px;
         text-align: left;
     }
-    .timeline li .timeline-panel{
-        float: left;
+   .timeline li .timeline-panel{
+         float: left;
         width: 41%;
         padding: 0 20px 20px 30px;
         text-align: right;
@@ -178,5 +264,5 @@ header{
         width: 100px;
         height: 100px;
         margin-left: -50px;
-     }
-} */
+    }
+}
